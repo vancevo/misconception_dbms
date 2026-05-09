@@ -1,0 +1,51 @@
+# =============================================================================
+# Misconception Mining Configuration
+# =============================================================================
+# Hyperparameters for embedding strategies, clustering, and evaluation.
+
+# Global random seed for reproducibility
+seed: 42
+
+# SBERT model for embedding
+sbert_model: all-MiniLM-L6-v2
+
+# Embedding strategies to compare
+embedding_strategies:
+  - name: answer_only        # Strategy A: embed(student_answer)
+  - name: question_answer    # Strategy B: embed(question + student_answer)
+  - name: full_triplet       # Strategy C: embed(question + reference + student_answer)
+
+# Record filtering: only include these label_5way values
+filter_labels:
+  - partially_correct_incomplete
+  - contradictory
+  - irrelevant
+
+# Granularity levels for clustering
+granularity_levels:
+  - per_question
+  - per_domain
+  - global
+
+# --- UMAP Dimensionality Reduction ---
+umap:
+  n_components: 5
+  n_neighbors: 15
+  min_dist: 0.1
+  metric: cosine
+
+# --- KMeans ---
+kmeans:
+  n_clusters: 10
+  n_init: 10
+  max_iter: 300
+
+# --- HDBSCAN ---
+hdbscan:
+  min_cluster_size: 5
+  min_samples: 3
+  cluster_selection_method: eom  # "eom" or "leaf"
+
+# --- c-TF-IDF Keyword Extraction ---
+ctfidf:
+  top_n_keywords: 5

@@ -1,0 +1,16 @@
+huggingface:
+  dataset_id: "vancevo/misconception_mining"
+  split: "train"
+  use_auth_token: false # Đổi thành true và cung cấp HF_TOKEN env nếu dataset private
+
+local_fallback:
+  generate_path: "data/unified/data_generate.jsonl"
+  scraping_path: "data/unified/data_scraping.jsonl"
+
+database:
+  postgres:
+    host: "localhost"
+    port: 5432
+    db: "misconception_db"
+  memgraph:
+    uri: "bolt://localhost:7687"

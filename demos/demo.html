@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Misconception Mining — Demo</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#0F172A;color:#E2E8F0;min-height:100vh}
+.hero{text-align:center;padding:60px 20px 40px;background:linear-gradient(135deg,#0F172A 0%,#1E293B 100%)}
+.hero h1{font-size:2.5rem;font-weight:800;background:linear-gradient(90deg,#06B6D4,#8B5CF6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px}
+.hero p{color:#94A3B8;font-size:1.1rem;max-width:600px;margin:0 auto 30px}
+.stats{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-bottom:20px}
+.stat{background:#1E293B;border:1px solid #334155;border-radius:12px;padding:16px 28px;text-align:center}
+.stat-num{font-size:2rem;font-weight:700;color:#06B6D4}
+.stat-label{font-size:0.8rem;color:#64748B;text-transform:uppercase;letter-spacing:1px}
+.main{max-width:1200px;margin:0 auto;padding:30px 20px}
+.section-title{font-size:0.75rem;font-weight:700;color:#475569;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px}
+.card{background:#1E293B;border:1px solid #334155;border-radius:16px;padding:24px;margin-bottom:24px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:768px){.grid2{grid-template-columns:1fr}}
+canvas{border-radius:12px;cursor:crosshair}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.legend-item{display:flex;align-items:center;gap:8px;cursor:pointer;padding:6px 12px;border-radius:8px;transition:background 0.2s}
+.legend-item:hover{background:#334155}
+.dot{width:12px;height:12px;border-radius:50%}
+.cluster-list{display:flex;flex-direction:column;gap:8px}
+.cluster-row{padding:14px;border-radius:12px;cursor:pointer;transition:all 0.2s;border:1px solid transparent}
+.cluster-row:hover{background:#334155;border-color:#475569}
+.cluster-row.active{background:#1e3a5f;border-color:#06B6D4}
+.cluster-name{font-weight:600;font-size:0.95rem;display:flex;align-items:center;gap:8px}
+.cluster-meta{font-size:0.78rem;color:#64748B;margin-top:4px}
+.keywords{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.kw{background:#0F3460;border:1px solid #1a4f8a;color:#60A5FA;padding:4px 10px;border-radius:20px;font-size:0.75rem;font-family:monospace}
+.answers{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.answer-card{background:#0F172A;border-left:3px solid #334155;padding:12px;border-radius:6px;font-size:0.85rem;color:#CBD5E1;line-height:1.5}
+.answer-card .label{font-size:0.7rem;color:#64748B;margin-top:6px}
+.metric-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.metric{background:#0F172A;border-radius:10px;padding:14px 20px;flex:1;min-width:100px;text-align:center}
+.metric-val{font-size:1.6rem;font-weight:700;color:#10B981}
+.metric-name{font-size:0.7rem;color:#64748B;margin-top:4px}
+.pipeline{display:flex;align-items:center;gap:0;margin-bottom:30px;overflow-x:auto}
+.step{background:#1E293B;border:1px solid #334155;border-radius:12px;padding:16px;text-align:center;min-width:130px}
+.step-icon{font-size:1.8rem;margin-bottom:6px}
+.step-name{font-size:0.78rem;font-weight:600;color:#E2E8F0}
+.step-desc{font-size:0.68rem;color:#64748B;margin-top:4px}
+.arrow{color:#334155;font-size:1.5rem;padding:0 8px}
+.tab-bar{display:flex;gap:4px;margin-bottom:20px}
+.tab{padding:8px 18px;border-radius:8px;border:none;background:transparent;color:#64748B;cursor:pointer;font-size:0.85rem;font-weight:500;transition:all 0.2s}
+.tab.active{background:#1E293B;color:#06B6D4;border:1px solid #334155}
+.tab:hover{color:#94A3B8}
+.tooltip{position:fixed;background:#1E293B;border:1px solid #475569;border-radius:8px;padding:10px 14px;font-size:0.8rem;pointer-events:none;z-index:999;display:none;max-width:250px;line-height:1.4}
+.bar-chart{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.bar-row{display:flex;align-items:center;gap:10px}
+.bar-label{font-size:0.78rem;color:#94A3B8;width:150px;text-align:right;flex-shrink:0}
+.bar-track{flex:1;background:#0F172A;border-radius:4px;height:20px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:0.7rem;font-weight:600;color:#fff;transition:width 1s ease}
+.bar-count{font-size:0.75rem;color:#64748B;width:30px}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🔬 Misconception Mining</h1>
+  <p>Hệ thống tự động phát hiện <strong style="color:#06B6D4">mẫu sai lầm</strong> trong câu trả lời sinh viên bằng AI — giúp giáo viên nhanh chóng hiểu "sinh viên đang nhầm lẫn điều gì".</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">10,000</div><div class="stat-label">Câu trả lời</div></div>
+    <div class="stat"><div class="stat-num" style="color:#D946EF">9</div><div class="stat-label">Cấu hình thử nghiệm</div></div>
+    <div class="stat"><div class="stat-num" style="color:#84CC16">6</div><div class="stat-label">Nhóm lỗi sai</div></div>
+    <div class="stat"><div class="stat-num" style="color:#F59E0B">0.63</div><div class="stat-label">NMI tốt nhất</div></div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- PIPELINE -->
+  <div class="section-title">Quy trình xử lý (Pipeline)</div>
+  <div class="pipeline">
+    <div class="step"><div class="step-icon">📝</div><div class="step-name">Dữ liệu đầu vào</div><div class="step-desc">Câu trả lời sai của sinh viên</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="step-icon">🤖</div><div class="step-name">SBERT Embedding</div><div class="step-desc">Chuyển text → vector 384 chiều</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="step-icon">📉</div><div class="step-name">UMAP</div><div class="step-desc">Giảm xuống 2D/5D</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="step-icon">🎯</div><div class="step-name">HDBSCAN</div><div class="step-desc">Tự động phân nhóm</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="step-icon">📊</div><div class="step-name">Kết quả</div><div class="step-desc">Bản đồ lỗi sai trực quan</div></div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tab-bar">
+    <button class="tab active" onclick="showTab('viz')">🗺️ Bản đồ Cụm</button>
+    <button class="tab" onclick="showTab('compare')">📊 So sánh Cấu hình</button>
+    <button class="tab" onclick="showTab('answers')">💬 Câu trả lời mẫu</button>
+  </div>
+
+  <!-- VIZ TAB -->
+  <div id="tab-viz">
+    <div class="grid2">
+      <div class="card">
+        <div class="section-title">UMAP — Bản đồ lỗi sai 2D</div>
+        <canvas id="scatter" width="500" height="380"></canvas>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div class="card" id="detail-panel">
+        <div class="section-title">Chi tiết nhóm</div>
+        <div style="color:#475569;text-align:center;padding:60px 0;font-size:0.9rem">
+          👆 Click vào một điểm hoặc chọn nhóm bên trái
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="section-title">Kích thước các nhóm lỗi sai</div>
+      <div class="bar-chart" id="bar-chart"></div>
+    </div>
+  </div>
+
+  <!-- COMPARE TAB -->
+  <div id="tab-compare" style="display:none">
+    <div class="card">
+      <div class="section-title">So sánh 9 cấu hình thực nghiệm (NMI — càng cao càng tốt)</div>
+      <div class="bar-chart" id="config-chart"></div>
+    </div>
+    <div class="grid2" style="margin-top:24px">
+      <div class="card">
+        <div class="section-title">🏆 Cấu hình tốt nhất: C6</div>
+        <div class="metric-row">
+          <div class="metric"><div class="metric-val">0.63</div><div class="metric-name">NMI</div></div>
+          <div class="metric"><div class="metric-val" style="color:#06B6D4">0.49</div><div class="metric-name">ARI</div></div>
+          <div class="metric"><div class="metric-val" style="color:#D946EF">0.72</div><div class="metric-name">Purity</div></div>
+          <div class="metric"><div class="metric-val" style="color:#F59E0B">0.61</div><div class="metric-name">V-measure</div></div>
+        </div>
+        <div style="margin-top:16px;padding:14px;background:#0F3460;border-radius:10px;font-size:0.85rem;color:#93C5FD">
+          <strong>Strategy B</strong> (Câu hỏi + Câu trả lời) + <strong>BERTopic</strong> (UMAP → HDBSCAN → c-TF-IDF)<br>
+          <span style="color:#64748B">→ Kết hợp ngữ cảnh câu hỏi giúp phân biệt lỗi sai chính xác hơn</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="section-title">📌 Nhận xét chính</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;font-size:0.85rem">
+          <li style="padding:10px;background:#0F172A;border-radius:8px;border-left:3px solid #06B6D4">
+            <strong style="color:#06B6D4">Strategy B tốt nhất</strong><br>
+            <span style="color:#94A3B8">Thêm câu hỏi vào ngữ cảnh giúp phân biệt lỗi sai đúng hơn</span>
+          </li>
+          <li style="padding:10px;background:#0F172A;border-radius:8px;border-left:3px solid #D946EF">
+            <strong style="color:#D946EF">BERTopic > HDBSCAN > KMeans</strong><br>
+            <span style="color:#94A3B8">Phương pháp mật độ phù hợp với dữ liệu tự nhiên hơn</span>
+          </li>
+          <li style="padding:10px;background:#0F172A;border-radius:8px;border-left:3px solid #84CC16">
+            <strong style="color:#84CC16">UMAP cải thiện đáng kể</strong><br>
+            <span style="color:#94A3B8">Giảm chiều 384D → 5D trước khi phân cụm giúp tăng NMI ~30%</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANSWERS TAB -->
+  <div id="tab-answers" style="display:none">
+    <div class="grid2">
+      <div class="card">
+        <div class="section-title">Chọn nhóm lỗi sai</div>
+        <div class="cluster-list" id="cluster-list-tab"></div>
+      </div>
+      <div class="card">
+        <div class="section-title">Câu trả lời trong nhóm</div>
+        <div class="answers" id="answers-panel">
+          <div style="color:#475569;text-align:center;padding:40px 0">Chọn một nhóm bên trái</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const COLORS=['#06B6D4','#D946EF','#84CC16','#F59E0B','#EF4444','#8B5CF6'];
+
+const CLUSTERS=[
+  {id:0,label:'Nhầm lẫn Năng lượng & Lực',en:'Energy Confusion',keywords:['energy','force','work','power','heat'],color:COLORS[0],cohesion:0.71,
+   answers:['Năng lượng và lực là một vì cả hai đều làm vật chuyển động','Công và năng lượng giống nhau, chỉ khác đơn vị đo','Nhiệt lượng và nhiệt độ là khái niệm giống hệt nhau','Công suất chỉ là cách gọi khác của năng lượng']},
+  {id:1,label:'Nhầm hướng Lực tác dụng',en:'Force Direction',keywords:['force','direction','push','pull','gravity'],color:COLORS[1],cohesion:0.68,
+   answers:['Lực luôn theo hướng chuyển động của vật','Trọng lực chỉ kéo thẳng xuống, không có hướng ngang','Ma sát luôn dừng hoàn toàn chuyển động','Lực đẩy và lực kéo luôn bằng nhau']},
+  {id:2,label:'Nhầm lẫn Đơn vị đo',en:'Unit Confusion',keywords:['unit','kilogram','newton','joule','measure'],color:COLORS[2],cohesion:0.74,
+   answers:['Kilogram và Newton đo cùng một đại lượng','Khối lượng và trọng lượng là hoàn toàn giống nhau','Joule và Watt có thể dùng thay nhau','1 Newton bằng 1 kilogram']},
+  {id:3,label:'Đảo ngược Quy trình',en:'Process Reversal',keywords:['reverse','order','process','wrong','opposite'],color:COLORS[3],cohesion:0.62,
+   answers:['Quang hợp xảy ra theo chiều ngược lại','Nước chảy từ vùng nồng độ thấp đến cao','Điện tử chuyển từ cực âm sang dương trong pin','Nhiệt truyền từ lạnh sang nóng']},
+  {id:4,label:'Nhầm phạm vi Khái niệm',en:'Scope Error',keywords:['scope','general','specific','broad','narrow'],color:COLORS[4],cohesion:0.59,
+   answers:['Tất cả phản ứng hóa học đều tỏa nhiệt','Mọi kim loại đều dẫn điện tốt như nhau','Tất cả sinh vật đều cần oxy để sống','Mọi chất lỏng đều có khả năng dẫn điện']},
+  {id:5,label:'Nhầm lẫn Thuật ngữ',en:'Terminology Mix-up',keywords:['term','definition','vocabulary','concept','meaning'],color:COLORS[5],cohesion:0.66,
+   answers:['Tốc độ và vận tốc là hoàn toàn giống nhau','Acid và base đều có tính ăn mòn giống nhau','Nguyên tử và phân tử là cùng khái niệm','Tiến hóa nghĩa là sinh vật ngày càng hoàn hảo hơn']},
+];
+
+// Generate UMAP-like scattered points
+function genPoints(cx,cy,n,r,color,cid){
+  const pts=[];
+  for(let i=0;i<n;i++){
+    const a=Math.random()*Math.PI*2, d=Math.random()*r;
+    pts.push({x:cx+Math.cos(a)*d,y:cy+Math.sin(a)*d,color,cid});
+  }
+  return pts;
+}
+
+const rng=(()=>{let s=42;return()=>{s=(s*16807)%2147483647;return(s-1)/2147483646;};})();
+
+const centers=[[120,120],[360,90],[220,280],[440,250],[150,380],[390,370]];
+const sizes=[52,38,45,31,42,35];
+let allPoints=[];
+CLUSTERS.forEach((c,i)=>{
+  const [cx,cy]=centers[i];
+  const n=sizes[i];
+  for(let j=0;j<n;j++){
+    const a=rng()*Math.PI*2,d=rng()*55;
+    allPoints.push({x:cx+Math.cos(a)*d,y:cy+Math.sin(a)*d,color:c.color,cid:i});
+  }
+});
+
+let selectedCluster=null;
+const canvas=document.getElementById('scatter');
+const ctx=canvas.getContext('2d');
+
+function drawScatter(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle='#0F172A';
+  ctx.beginPath();ctx.roundRect(0,0,canvas.width,canvas.height,12);ctx.fill();
+
+  allPoints.forEach(p=>{
+    const faded=selectedCluster!==null&&p.cid!==selectedCluster;
+    ctx.globalAlpha=faded?0.1:0.85;
+    ctx.beginPath();ctx.arc(p.x,p.y,5,0,Math.PI*2);
+    ctx.fillStyle=p.color;ctx.fill();
+  });
+  ctx.globalAlpha=1;
+}
+
+drawScatter();
+
+// Legend
+const legendEl=document.getElementById('legend');
+CLUSTERS.forEach(c=>{
+  const div=document.createElement('div');
+  div.className='legend-item';
+  div.innerHTML=`<div class="dot" style="background:${c.color}"></div><span style="font-size:0.8rem;color:#94A3B8">${c.label}</span>`;
+  div.onclick=()=>{
+    selectedCluster=selectedCluster===c.id?null:c.id;
+    drawScatter();
+    showDetail(selectedCluster===null?null:CLUSTERS[c.id]);
+  };
+  legendEl.appendChild(div);
+});
+
+// Tooltip
+const tooltip=document.getElementById('tooltip');
+canvas.addEventListener('mousemove',e=>{
+  const rect=canvas.getBoundingClientRect();
+  const mx=e.clientX-rect.left,my=e.clientY-rect.top;
+  let found=null;
+  allPoints.forEach(p=>{
+    if(Math.hypot(p.x-mx,p.y-my)<8)found=p;
+  });
+  if(found){
+    const c=CLUSTERS[found.cid];
+    tooltip.style.display='block';
+    tooltip.style.left=(e.clientX+12)+'px';
+    tooltip.style.top=(e.clientY-10)+'px';
+    tooltip.innerHTML=`<strong style="color:${c.color}">${c.label}</strong><br><span style="color:#94A3B8;font-size:0.75rem">Click để xem chi tiết nhóm này</span>`;
+  } else {
+    tooltip.style.display='none';
+  }
+});
+canvas.addEventListener('mouseleave',()=>tooltip.style.display='none');
+canvas.addEventListener('click',e=>{
+  const rect=canvas.getBoundingClientRect();
+  const mx=e.clientX-rect.left,my=e.clientY-rect.top;
+  let found=null;
+  allPoints.forEach(p=>{if(Math.hypot(p.x-mx,p.y-my)<8)found=p;});
+  if(found){
+    selectedCluster=found.cid;
+    drawScatter();
+    showDetail(CLUSTERS[found.cid]);
+  }
+});
+
+function showDetail(c){
+  const panel=document.getElementById('detail-panel');
+  if(!c){
+    panel.innerHTML='<div class="section-title">Chi tiết nhóm</div><div style="color:#475569;text-align:center;padding:60px 0;font-size:0.9rem">👆 Click vào một điểm hoặc chọn nhóm</div>';
+    return;
+  }
+  panel.innerHTML=`
+    <div class="section-title">Chi tiết nhóm</div>
+    <div style="font-size:1.2rem;font-weight:700;color:${c.color};margin-bottom:8px">${c.label}</div>
+    <div style="font-size:0.8rem;color:#64748B;margin-bottom:16px">${sizes[c.id]} câu trả lời · Độ kết dính: ${c.cohesion}</div>
+    <div style="font-size:0.75rem;color:#475569;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Từ khóa đặc trưng (c-TF-IDF)</div>
+    <div class="keywords">${c.keywords.map(k=>`<span class="kw">${k}</span>`).join('')}</div>
+    <div style="font-size:0.75rem;color:#475569;text-transform:uppercase;letter-spacing:1px;margin:16px 0 8px">Câu trả lời mẫu</div>
+    <div class="answers">${c.answers.slice(0,3).map(a=>`<div class="answer-card">"${a}"</div>`).join('')}</div>
+  `;
+}
+
+// Bar chart
+const barChart=document.getElementById('bar-chart');
+const maxCount=Math.max(...sizes);
+CLUSTERS.forEach((c,i)=>{
+  const pct=Math.round(sizes[i]/maxCount*100);
+  barChart.innerHTML+=`
+    <div class="bar-row">
+      <div class="bar-label">${c.label}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${c.color}">${sizes[i]}</div></div>
+    </div>`;
+});
+
+// Config compare chart
+const configs=[
+  {name:'C1: A+KMeans',nmi:0.32,color:'#475569'},
+  {name:'C2: A+HDBSCAN',nmi:0.48,color:'#475569'},
+  {name:'C3: A+BERTopic',nmi:0.49,color:'#475569'},
+  {name:'C4: B+KMeans',nmi:0.45,color:'#475569'},
+  {name:'C5: B+HDBSCAN',nmi:0.62,color:'#06B6D4'},
+  {name:'C6: B+BERTopic ★',nmi:0.63,color:'#D946EF'},
+  {name:'C7: C+KMeans',nmi:0.41,color:'#475569'},
+  {name:'C8: C+HDBSCAN',nmi:0.57,color:'#475569'},
+  {name:'C9: C+BERTopic',nmi:0.58,color:'#475569'},
+];
+const configChart=document.getElementById('config-chart');
+configs.forEach(c=>{
+  const pct=Math.round(c.nmi/0.65*100);
+  configChart.innerHTML+=`
+    <div class="bar-row">
+      <div class="bar-label" style="font-size:0.75rem">${c.name}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${c.color}">${c.nmi}</div></div>
+    </div>`;
+});
+
+// Cluster list for answers tab
+const listEl=document.getElementById('cluster-list-tab');
+CLUSTERS.forEach(c=>{
+  const div=document.createElement('div');
+  div.className='cluster-row';
+  div.innerHTML=`<div class="cluster-name"><span class="dot" style="background:${c.color}"></span>${c.label}</div><div class="cluster-meta">${sizes[c.id]} câu trả lời · từ khóa: ${c.keywords.slice(0,3).join(', ')}</div>`;
+  div.onclick=()=>{
+    document.querySelectorAll('.cluster-row').forEach(r=>r.classList.remove('active'));
+    div.classList.add('active');
+    const panel=document.getElementById('answers-panel');
+    panel.innerHTML=c.answers.map((a,i)=>`<div class="answer-card">"${a}"<div class="label">Nhóm: <strong style="color:${c.color}">${c.label}</strong></div></div>`).join('');
+  };
+  listEl.appendChild(div);
+});
+
+function showTab(name){
+  ['viz','compare','answers'].forEach(t=>{
+    document.getElementById('tab-'+t).style.display=t===name?'block':'none';
+  });
+  document.querySelectorAll('.tab').forEach((el,i)=>{
+    el.classList.toggle('active',['viz','compare','answers'][i]===name);
+  });
+  if(name==='compare'){
+    setTimeout(()=>{
+      document.querySelectorAll('.bar-fill').forEach(el=>{
+        const w=el.style.width;el.style.width='0';
+        setTimeout(()=>el.style.width=w,50);
+      });
+    },100);
+  }
+}
+</script>
+</body>
+</html>

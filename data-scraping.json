@@ -1,0 +1,905 @@
+[
+  {
+    "id": "college-physics-2e_1_1",
+    "questions": "The speed limit on some interstate highways is roughly 100 km/h. (a) What is this in meters per second? (b) How many miles per hour is this?",
+    "reference_answer": "(a) 27 . 8 m/s 27 . 8 m/s (b) 62 . 1 mph 62 . 1 mph",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_3",
+    "questions": "Show that 1 . 0 m/s = 3 . 6 km/h 1 . 0 m/s = 3 . 6 km/h . Hint: Show the explicit steps involved in converting 1 . 0 m/s = 3 . 6 km/h. 1 . 0 m/s = 3 . 6 km/h.",
+    "reference_answer": "1.0 m s = 1 . 0 m s × 3600 s 1 hr × 1 km 1000 m 1.0 m s = 1 . 0 m s × 3600 s 1 hr × 1 km 1000 m = 3 . 6 km/h = 3 . 6 km/h .",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_5",
+    "questions": "Soccer fields vary in size. A large soccer field is 115 m long and 85 m wide. What are its dimensions in feet and inches? (Assume that 1 meter equals 3.281 feet.)",
+    "reference_answer": "length: 377 ft 377 ft ; 4 . 53 × 10 3 in . 4 . 53 × 10 3 in . width: 280 ft 280 ft ; 3 . 3 × 10 3 in 3 . 3 × 10 3 in .",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_7",
+    "questions": "Mount Everest, at 29,028 feet, is the tallest mountain on the Earth. What is its height in kilometers? (Assume that 1 kilometer equals 3,281 feet.)",
+    "reference_answer": "8 . 847 km 8 . 847 km",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_9",
+    "questions": "Tectonic plates are large segments of the Earth’s crust that move slowly. Suppose that one such plate has an average speed of 4.0 cm/year. (a) What distance does it move in 1 s at this speed? (b) What is its speed in kilometers per million years?",
+    "reference_answer": "(a) 1 . 3 × 10 − 9 m 1 . 3 × 10 − 9 m (b) 40 km/My 40 km/My",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_11",
+    "questions": "Suppose that your bathroom scale reads your mass as 65 kg with a 3% uncertainty. What is the uncertainty in your mass (in kilograms)?",
+    "reference_answer": "2 kg",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_13",
+    "questions": "(a) A car speedometer has a 5.0 % 5.0 % uncertainty. What is the range of possible speeds when it reads 90 km/h 90 km/h ? (b) Convert this range to miles per hour. 1 km = 0.6214 mi 1 km = 0.6214 mi",
+    "reference_answer": "(a) 85 to 95 km/h 85 to 95 km/h (b) 53 to 59 mi/h 53 to 59 mi/h",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_15",
+    "questions": "(a) Suppose that a person has an average heart rate of 72.0 beats/min. How many beats do they have in 2.0 y? (b) In 2.00 y? (c) In 2.000 y?",
+    "reference_answer": "(a) 7 . 6 × 10 7 beats 7 . 6 × 10 7 beats (b) 7 . 57 × 10 7 beats 7 . 57 × 10 7 beats (c) 7 . 57 × 10 7 beats 7 . 57 × 10 7 beats",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_17",
+    "questions": "State how many significant figures are proper in the results of the following calculations: (a) 106 . 7 98 . 2 / 46 . 210 1 . 01 106 . 7 98 . 2 / 46 . 210 1 . 01 (b) 18 . 7 2 18 . 7 2 (c) 1 . 60 × 10 − 19 3712 1 . 60 × 10 − 19 3712 .",
+    "reference_answer": "(a) 3 (b) 3 (c) 3",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_19",
+    "questions": "(a) If your speedometer has an uncertainty of 2 . 0 km/h 2 . 0 km/h at a speed of 90 km/h 90 km/h , what is the percent uncertainty? (b) If it has the same percent uncertainty when it reads 60 km/h 60 km/h , what is the range of speeds you could be going?",
+    "reference_answer": "(a) 2 . 2 % 2 . 2 % (b) 59 to 61 km/h 59 to 61 km/h",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_21",
+    "questions": "A person measures their heart rate by counting the number of beats in 30 s 30 s . If 40 ± 1 40 ± 1 beats are counted in 30 . 0 ± 0 . 5 s 30 . 0 ± 0 . 5 s , what is the heart rate and its uncertainty in beats per minute?",
+    "reference_answer": "80 ± 3 beats/min 80 ± 3 beats/min",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_23",
+    "questions": "If a marathon runner averages 9.5 mi/h, how long does it take him or her to run a 26.22-mi marathon?",
+    "reference_answer": "2 . 8 h 2 . 8 h",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_25",
+    "questions": "The sides of a small rectangular box are measured to be 1.80 ± 0.01 cm 1.80 ± 0.01 cm , 2.05 ± 0.02 cm, and 3.1 ± 0.1 cm 2.05 ± 0.02 cm, and 3.1 ± 0.1 cm long. Calculate its volume and uncertainty in cubic centimeters.",
+    "reference_answer": "11.4 ± 0.6 cm 3 11.4 ± 0.6 cm 3",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_27",
+    "questions": "The length and width of a rectangular room are measured to be 3 . 955 ± 0 . 005 m 3 . 955 ± 0 . 005 m and 3 . 050 ± 0 . 005 m 3 . 050 ± 0 . 005 m . Calculate the area of the room and its uncertainty in square meters.",
+    "reference_answer": "12 . 06 ± 0 . 04 m 2 12 . 06 ± 0 . 04 m 2",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_29",
+    "questions": "How many heartbeats are there in a lifetime?",
+    "reference_answer": "Sample answer: 2 × 10 9 2 × 10 9 heartbeats",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_31",
+    "questions": "How many times longer than the mean life of an extremely unstable atomic nucleus is the lifetime of a human? (Hint: The lifetime of an unstable atomic nucleus is on the order of 10 − 22 s 10 − 22 s .)",
+    "reference_answer": "Sample answer: 2 × 10 31 2 × 10 31 if an average human lifetime is taken to be about 70 years.",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_33",
+    "questions": "Approximately how many atoms thick is a cell membrane, assuming all atoms there average about twice the size of a hydrogen atom?",
+    "reference_answer": "Sample answer: 50 atoms",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "college-physics-2e_1_35",
+    "questions": "(a) Calculate the number of cells in a hummingbird assuming the mass of an average cell is ten times the mass of a bacterium. (b) Making the same assumption, how many cells are there in a human?",
+    "reference_answer": "Sample answers: (a) 10 12 10 12 cells/hummingbird (b) 10 16 10 16 cells/human",
+    "student_answer": "",
+    "label": "openstax_college-physics-2e"
+  },
+  {
+    "id": "university-physics-volume-1_1_15",
+    "questions": "Use the orders of magnitude you found in the previous problem to answer the following questions to within an order of magnitude. (a) How many electrons would it take to equal the mass of a proton? (b) How many Earths would it take to equal the mass of the Sun? (c) How many Earth–Moon distances would it take to cover the distance from Earth to the Sun? (d) How many Moon atmospheres would it take to equal the mass of Earth’s atmosphere? (e) How many moons would it take to equal the mass of Earth? (f) How many protons would it take to equal the mass of the Sun?",
+    "reference_answer": "a. 10 3 ; b. 10 5 ; c. 10 2 ; d. 10 15 ; e. 10 2 ; f. 10 57",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_17",
+    "questions": "A generation is about one-third of a lifetime. Approximately how many generations have passed since the year 0?",
+    "reference_answer": "10 2 generations",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_19",
+    "questions": "Calculate the approximate number of atoms in a bacterium. Assume the average mass of an atom in the bacterium is 10 times the mass of a proton.",
+    "reference_answer": "10 11 atoms",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_21",
+    "questions": "Assuming one nerve impulse must end before another can begin, what is the maximum firing rate of a nerve in impulses per second?",
+    "reference_answer": "10 3 nerve impulses/s",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_23",
+    "questions": "Roughly how many floating-point operations can a supercomputer perform in a human lifetime?",
+    "reference_answer": "10 26 floating-point operations per human lifetime",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_25",
+    "questions": "The following times are given in seconds. Use metric prefixes to rewrite them so the numerical value is greater than one but less than 1000. For example, 7.9 × 10 −2 s 7.9 × 10 −2 s could be written as either 7.9 cs or 79 ms. (a) 9.57 × 10 5 s; 9.57 × 10 5 s; (b) 0.045 s; (c) 5.5 × 10 −7 s; 5.5 × 10 −7 s; (d) 3.16 × 10 7 s. 3.16 × 10 7 s.",
+    "reference_answer": "a. 957 ks; b. 4.5 cs or 45 ms; c. 550 ns; d. 31.6 Ms",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_27",
+    "questions": "The following lengths are given in meters. Use metric prefixes to rewrite them so the numerical value is bigger than one but less than 1000. For example, 7.9 × 10 −2 m 7.9 × 10 −2 m could be written either as 7.9 cm or 79 mm. (a) 7.59 × 10 7 m; 7.59 × 10 7 m; (b) 0.0074 m; (c) 8.8 × 10 −11 m; 8.8 × 10 −11 m; (d) 1.63 × 10 13 m. 1.63 × 10 13 m.",
+    "reference_answer": "a. 75.9 Mm; b. 7.4 mm; c. 88 pm; d. 16.3 Tm",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_29",
+    "questions": "The following masses are given in kilograms. Use metric prefixes on the gram to rewrite them so the numerical value is bigger than one but less than 1000. For example, 7 × 10 −4 kg 7 × 10 −4 kg could be written as 70 cg or 700 mg. (a) 3.8 × 10 −5 kg; 3.8 × 10 −5 kg; (b) 2.3 × 10 17 kg; 2.3 × 10 17 kg; (c) 2.4 × 10 −11 kg; 2.4 × 10 −11 kg; (d) 8 × 10 15 kg; 8 × 10 15 kg; (e) 4.2 × 10 −3 kg. 4.2 × 10 −3 kg.",
+    "reference_answer": "a. 3.8 cg or 38 mg; b. 230 Eg; c. 24 ng; d. 8 Eg e. 4.2 g",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_31",
+    "questions": "The speed limit on some interstate highways is roughly 100 km/h. (a) What is this in meters per second? (b) How many miles per hour is this?",
+    "reference_answer": "a. 27.8 m/s; b. 62 mi/h",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_33",
+    "questions": "In SI units, speeds are measured in meters per second (m/s). But, depending on where you live, you’re probably more comfortable of thinking of speeds in terms of either kilometers per hour (km/h) or miles per hour (mi/h). In this problem, you will see that 1 m/s is roughly 4 km/h or 2 mi/h, which is handy to use when developing your physical intuition. More precisely, show that (a) 1.0 m/s = 3.6 km/h 1.0 m/s = 3.6 km/h and (b) 1.0 m/s = 2.2 mi/h . 1.0 m/s = 2.2 mi/h .",
+    "reference_answer": "a. 3.6 km/h; b. 2.2 mi/h",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_35",
+    "questions": "Soccer fields vary in size. A large soccer field is 115 m long and 85.0 m wide. What is its area in square feet? (Assume that 1 m = 3.281 ft.)",
+    "reference_answer": "1.05 × 10 5 ft 2 1.05 × 10 5 ft 2",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_37",
+    "questions": "Mount Everest, at 29,028 ft, is the tallest mountain on Earth. What is its height in kilometers? (Assume that 1 m = 3.281 ft.)",
+    "reference_answer": "8.847 km",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_39",
+    "questions": "Tectonic plates are large segments of Earth’s crust that move slowly. Suppose one such plate has an average speed of 4.0 cm/yr. (a) What distance does it move in 1.0 s at this speed? (b) What is its speed in kilometers per million years?",
+    "reference_answer": "a. 1.3 × 10 −9 m ; 1.3 × 10 −9 m ; b. 40 km/My",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_41",
+    "questions": "The density of nuclear matter is about 10 18 kg/m 3 . Given that 1 mL is equal in volume to cm 3 , what is the density of nuclear matter in megagrams per microliter (that is, Mg/ μ L Mg/ μ L )?",
+    "reference_answer": "10 6 Mg/ μ L 10 6 Mg/ μ L",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_43",
+    "questions": "A commonly used unit of mass in the English system is the pound-mass, abbreviated lbm, where 1 lbm = 0.454 kg. What is the density of water in pound-mass per cubic foot?",
+    "reference_answer": "62.4 lbm/ft 3",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_45",
+    "questions": "It takes 2 π 2 π radians (rad) to get around a circle, which is the same as 360°. How many radians are in 1°?",
+    "reference_answer": "0.017 rad",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_47",
+    "questions": "A light-nanosecond is the distance light travels in 1 ns. Convert 1 ft to light-nanoseconds.",
+    "reference_answer": "1 light-nanosecond",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_49",
+    "questions": "A fluid ounce is about 30 mL. What is the volume of a 12 fl-oz can of soda pop in cubic meters?",
+    "reference_answer": "3.6 × 10 −4 m 3 3.6 × 10 −4 m 3",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_51",
+    "questions": "Consider the physical quantities s , v, a, and t with dimensions [ s ] = L , [ s ] = L , [ v ] = LT −1 , [ v ] = LT −1 , [ a ] = LT −2 , [ a ] = LT −2 , and [ t ] = T . [ t ] = T . Determine whether each of the following equations is dimensionally consistent. (a) v 2 = 2 a s ; v 2 = 2 a s ; (b) s = v t 2 + 0.5 a t 2 ; s = v t 2 + 0.5 a t 2 ; (c) v = s / t ; v = s / t ; (d) a = v / t . a = v / t .",
+    "reference_answer": "a. Yes, both terms have dimension L 2 T -2 b. No. c. Yes, both terms have dimension LT -1 d. Yes, both terms have dimension LT -2",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_53",
+    "questions": "Suppose quantity s s is a length and quantity t t is a time. Suppose the quantities v v and a a are defined by v = ds / dt and a = dv / dt . (a) What is the dimension of v ? (b) What is the dimension of the quantity a ? What are the dimensions of (c) ∫ v d t , ∫ v d t , (d) ∫ a d t , ∫ a d t , and (e) da / dt ?",
+    "reference_answer": "a. [v] = LT –1 ; b. [a] = LT –2 ; c. [ ∫ v d t ] = L; [ ∫ v d t ] = L; d. [ ∫ a d t ] = LT –1 ; [ ∫ a d t ] = LT –1 ; e. [ d a d t ] = LT –3 [ d a d t ] = LT –3",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_55",
+    "questions": "The arc length formula says the length s s of arc subtended by angle Ɵ Ɵ in a circle of radius r r is given by the equation s = r Ɵ . s = r Ɵ . What are the dimensions of (a) s , (b) r , and (c) Ɵ? Ɵ?",
+    "reference_answer": "a. L; b. L; c. L 0 = 1 (that is, it is dimensionless)",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_57",
+    "questions": "Assuming the human body is primarily made of water, estimate the number of molecules in it. (Note that water has a molecular mass of 18 g/mol and there are roughly 10 24 atoms in a mole.)",
+    "reference_answer": "10 28 atoms",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_59",
+    "questions": "Estimate the number of molecules that make up Earth, assuming an average molecular mass of 30 g/mol. (Note there are on the order of 10 24 objects per mole.)",
+    "reference_answer": "10 51 molecules",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_61",
+    "questions": "Roughly how many solar systems would it take to tile the disk of the Milky Way?",
+    "reference_answer": "10 16 solar systems",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_63",
+    "questions": "The average density of the Sun is on the order 10 3 kg/m 3 . (a) Estimate the diameter of the Sun. (b) Given that the Sun subtends at an angle of about half a degree in the sky, estimate its distance from Earth.",
+    "reference_answer": "a. Volume = 10 27 m 3 , diameter is 10 9 m.; b. 10 11 m",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_65",
+    "questions": "A floating-point operation is a single arithmetic operation such as addition, subtraction, multiplication, or division. (a) Estimate the maximum number of floating-point operations a human being could possibly perform in a lifetime. (b) How long would it take a supercomputer to perform that many floating-point operations?",
+    "reference_answer": "a. A reasonable estimate might be one operation per second for a total of 10 9 in a lifetime.; b. about (10 9 )(10 –17 s) = 10 –8 s, or about 10 ns",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_67",
+    "questions": "Suppose your bathroom scale reads your mass as 65 kg with a 3% uncertainty. What is the uncertainty in your mass (in kilograms)?",
+    "reference_answer": "2 kg",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_69",
+    "questions": "An infant’s pulse rate is measured to be 130 ± 5 beats/min. What is the percent uncertainty in this measurement?",
+    "reference_answer": "4%",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_71",
+    "questions": "A can contains 375 mL of soda. How much is left after 308 mL is removed?",
+    "reference_answer": "67 mL",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_73",
+    "questions": "(a) How many significant figures are in the numbers 99 and 100.? (b) If the uncertainty in each number is 1, what is the percent uncertainty in each? (c) Which is a more meaningful way to express the accuracy of these two numbers: significant figures or percent uncertainties?",
+    "reference_answer": "a. The number 99 has 2 significant figures; 100. has 3 significant figures. b. 1.00%; c. percent uncertainties",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_75",
+    "questions": "(a) A person’s blood pressure is measured to be 120 ± 2 mm Hg . 120 ± 2 mm Hg . What is its percent uncertainty? (b) Assuming the same percent uncertainty, what is the uncertainty in a blood pressure measurement of 80 mm Hg?",
+    "reference_answer": "a. 2%; b. 1 mm Hg",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_77",
+    "questions": "What is the area of a circle 3.102 cm in diameter?",
+    "reference_answer": "7.557 cm 2",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "university-physics-volume-1_1_79",
+    "questions": "Perform the following calculations and express your answer using the correct number of significant digits. (a) A woman has two bags weighing 13.5 lb and one bag with a weight of 10.2 lb. What is the total weight of the bags? (b) The force F on an object is equal to its mass m multiplied by its acceleration a . If a wagon with mass 55 kg accelerates at a rate of 0.0255 m/s 2 , what is the force on the wagon? (The unit of force is called the newton and it is expressed with the symbol N.)",
+    "reference_answer": "a. 37.2 lb; because the number of bags is an exact value, it is not considered in the significant figures; b. 1.4 N; because the value 55 kg has only two significant figures, the final value must also contain two significant figures",
+    "student_answer": "",
+    "label": "openstax_university-physics-volume-1"
+  },
+  {
+    "id": "chemistry-2e_1_1",
+    "questions": "Explain how you could experimentally determine whether the outside temperature is higher or lower than 0 °C (32 °F) without using a thermometer.",
+    "reference_answer": "Place a glass of water outside. It will freeze if the temperature is below 0 °C.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_3",
+    "questions": "Identify each of the following statements as being most similar to a hypothesis, a law, or a theory. Explain your reasoning. (a) The pressure of a sample of gas is directly proportional to the temperature of the gas. (b) Matter consists of tiny particles that can combine in specific ratios to form substances with specific properties. (c) At a higher temperature, solids (such as salt or sugar) will dissolve better in water.",
+    "reference_answer": "(a) law (states a consistently observed phenomenon, can be used for prediction); (b) theory (a widely accepted explanation of the behavior of matter); (c) hypothesis (a tentative explanation, can be investigated by experimentation)",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_5",
+    "questions": "Identify each of the underlined items as a part of either the macroscopic domain, the microscopic domain, or the symbolic domain of chemistry. For those in the symbolic domain, indicate whether they are symbols for a macroscopic or a microscopic feature. (a) A certain molecule contains one H atom and one Cl atom. (b) Copper wire has a density of about 8 g/cm 3 . (c) The bottle contains 15 grams of Ni powder . (d) A sulfur molecule is composed of eight sulfur atoms.",
+    "reference_answer": "(a) symbolic, microscopic; (b) macroscopic; (c) symbolic, macroscopic; (d) microscopic",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_7",
+    "questions": "The amount of heat required to melt 2 lbs of ice is twice the amount of heat required to melt 1 lb of ice. Is this observation a macroscopic or microscopic description of chemical behavior? Explain your answer.",
+    "reference_answer": "Macroscopic. The heat required is determined from macroscopic properties.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_9",
+    "questions": "What properties distinguish solids from liquids? Liquids from gases? Solids from gases?",
+    "reference_answer": "Liquids can change their shape (flow); solids can’t. Gases can undergo large volume changes as pressure changes; liquids do not. Gases flow and change volume; solids do not.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_11",
+    "questions": "How does a homogeneous mixture differ from a pure substance? How are they similar?",
+    "reference_answer": "The mixture can have a variety of compositions; a pure substance has a definite composition. Both have the same composition from point to point.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_13",
+    "questions": "How do molecules of elements and molecules of compounds differ? In what ways are they similar?",
+    "reference_answer": "Molecules of elements contain only one type of atom; molecules of compounds contain two or more types of atoms. They are similar in that both are comprised of two or more atoms chemically bonded together.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_15",
+    "questions": "Many of the items you purchase are mixtures of pure compounds. Select three of these commercial products and prepare a list of the ingredients that are pure compounds.",
+    "reference_answer": "Answers will vary. Sample answer: Gatorade contains water, sugar, dextrose, citric acid, salt, sodium chloride, monopotassium phosphate, and sucrose acetate isobutyrate.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_17",
+    "questions": "Classify each of the following as an element, a compound, or a mixture: (a) iron (b) oxygen (c) mercury oxide (d) pancake syrup (e) carbon dioxide (f) a substance composed of molecules each of which contains one hydrogen atom and one chlorine atom (g) baking soda (h) baking powder",
+    "reference_answer": "(a) element; (b) element; (c) compound; (d) mixture; (e) compound; (f) compound; (g) compound; (h) mixture",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_19",
+    "questions": "How are the molecules in oxygen gas, the molecules in hydrogen gas, and water molecules similar? How do they differ?",
+    "reference_answer": "In each case, a molecule consists of two or more combined atoms. They differ in that the types of atoms change from one substance to the next.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_21",
+    "questions": "Prepare a list of the principal chemicals consumed and produced during the operation of an automobile.",
+    "reference_answer": "Gasoline (a mixture of compounds), oxygen, and to a lesser extent, nitrogen are consumed. Carbon dioxide and water are the principal products. Carbon monoxide and nitrogen oxides are produced in lesser amounts.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_23",
+    "questions": "When elemental iron corrodes it combines with oxygen in the air to ultimately form red brown iron(III) oxide called rust. (a) If a shiny iron nail with an initial mass of 23.2 g is weighed after being coated in a layer of rust, would you expect the mass to have increased, decreased, or remained the same? Explain. (b) If the mass of the iron nail increases to 24.1 g, what mass of oxygen combined with the iron?",
+    "reference_answer": "(a) Increased as it would have combined with oxygen in the air thus increasing the amount of matter and therefore the mass. (b) 0.9 g",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_25",
+    "questions": "Yeast converts glucose to ethanol and carbon dioxide during anaerobic fermentation as depicted in the simple chemical equation here: glucose ⟶ ethanol + carbon dioxide glucose ⟶ ethanol + carbon dioxide (a) If 200.0 g of glucose is fully converted, what will be the total mass of ethanol and carbon dioxide produced? (b) If the fermentation is carried out in an open container, would you expect the mass of the container and contents after fermentation to be less than, greater than, or the same as the mass of the container and contents before fermentation? Explain. (c) If 97.7 g of carbon dioxide is produced, what mass of ethanol is produced?",
+    "reference_answer": "(a) 200.0 g; (b) The mass of the container and contents would decrease as carbon dioxide is a gaseous product and would leave the container. (c) 102.3 g",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_27",
+    "questions": "Classify each of the following changes as physical or chemical: (a) condensation of steam (b) burning of gasoline (c) souring of milk (d) dissolving of sugar in water (e) melting of gold",
+    "reference_answer": "(a) physical; (b) chemical; (c) chemical; (d) physical; (e) physical",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_29",
+    "questions": "The volume of a sample of oxygen gas changed from 10 mL to 11 mL as the temperature changed. Is this a chemical or physical change?",
+    "reference_answer": "physical",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_31",
+    "questions": "Explain the difference between extensive properties and intensive properties.",
+    "reference_answer": "The value of an extensive property depends upon the amount of matter being considered, whereas the value of an intensive property is the same regardless of the amount of matter being considered.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_33",
+    "questions": "The density (d) of a substance is an intensive property that is defined as the ratio of its mass (m) to its volume (V). density = mass volume d = m V density = mass volume d = m V Considering that mass and volume are both extensive properties, explain why their ratio, density, is intensive.",
+    "reference_answer": "Being extensive properties, both mass and volume are directly proportional to the amount of substance under study. Dividing one extensive property by another will in effect “cancel” this dependence on amount, yielding a ratio that is independent of amount (an intensive property).",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_35",
+    "questions": "Is a meter about an inch, a foot, a yard, or a mile?",
+    "reference_answer": "about a yard",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_37",
+    "questions": "Indicate the SI base units or derived units that are appropriate for the following measurements: (a) the mass of the moon (b) the distance from Dallas to Oklahoma City (c) the speed of sound (d) the density of air (e) the temperature at which alcohol boils (f) the area of the state of Delaware (g) the volume of a flu shot or a measles vaccination",
+    "reference_answer": "(a) kilograms; (b) meters; (c) meters/second; (d) kilograms/cubic meter; (e) kelvin; (f) square meters; (g) cubic meters",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_39",
+    "questions": "Give the name of the prefix and the quantity indicated by the following symbols that are used with SI base units. (a) c (b) d (c) G (d) k (e) m (f) n (g) p (h) T",
+    "reference_answer": "(a) centi-, × × 10 −2 ; (b) deci-, × × 10 −1 ; (c) Giga-, × × 10 9 ; (d) kilo-, × × 10 3 ; (e) milli-, × × 10 −3 ; (f) nano-, × × 10 −9 ; (g) pico-, × × 10 −12 ; (h) tera-, × × 10 12",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_41",
+    "questions": "Visit this density simulation and click the \"turn fluid into water\" button to adjust the density of liquid in the beaker to 1.00 g/mL. (a) Use the water displacement approach to measure the mass and volume of the unknown material (select the green block with question marks). (b) Use the measured mass and volume data from step (a) to calculate the density of the unknown material. (c) Assuming this material is a widely available copper-containing gemstone, what is its likely identity? Compare the measured density to the values tabulated at this gemstone density guide . (d) How are mass and density related for blocks of the same volume?",
+    "reference_answer": "(a) m = 18.58 g, V = 5.7 mL; (b) d = 3.3 g/mL; (c) malachite (basic copper carbonate, d = 3.25—4.10 g/mL).",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_43",
+    "questions": "Visit this density simulation and click the “turn fluid into water” button to adjust the density of liquid in the beaker to 1.00 g/mL. Change the block material to foam, and then wait patiently until the foam block stops bobbing up and down in the water. (a) The foam block should be floating on the surface of the water (that is, only partially submerged). What is the volume of water displaced? (b) Use the water volume from part (a) and the density of water (1.00 g/mL) to calculate the mass of water displaced. (c) Remove and weigh the foam block. How does the block’s mass compare to the mass of displaced water from part (b)?",
+    "reference_answer": "(a) displaced water volume = 2.8 mL; (b) displaced water mass = 2.8 g; (c) The block mass is 2.76 g, essentially equal to the mass of displaced water (2.8 g) and consistent with Archimedes’ principle of buoyancy.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_45",
+    "questions": "Express each of the following numbers in exponential notation with correct significant figures: (a) 704 (b) 0.03344 (c) 547.9 (d) 22086 (e) 1000.00 (f) 0.0000000651 (g) 0.007157",
+    "reference_answer": "(a) 7.04 × × 10 2 ; (b) 3.344 × × 10 −2 ; (c) 5.479 × × 10 2 ; (d) 2.2086 × × 10 4 ; (e) 1.00000 × × 10 3 ; (f) 6.51 × × 10 −8 ; (g) 7.157 × × 10 −3",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_47",
+    "questions": "Indicate whether each of the following can be determined exactly or must be measured with some degree of uncertainty: (a) the number of seconds in an hour (b) the number of pages in this book (c) the number of grams in your weight (d) the number of grams in 3 kilograms (e) the volume of water you drink in one day (f) the distance from San Francisco to Kansas City",
+    "reference_answer": "(a) exact; (b) exact; (c) uncertain; (d) exact; (e) uncertain; (f) uncertain",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_49",
+    "questions": "How many significant figures are contained in each of the following measurements? (a) 53 cm (b) 2.05 × × 10 8 m (c) 86,002 J (d) 9.740 × × 10 4 m/s (e) 10.0613 m 3 (f) 0.17 g/mL (g) 0.88400 s",
+    "reference_answer": "(a) two; (b) three; (c) five; (d) four; (e) six; (f) two; (g) five",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_51",
+    "questions": "Round off each of the following numbers to two significant figures: (a) 0.436 (b) 9.000 (c) 27.2 (d) 135 (e) 1.497 × × 10 −3 (f) 0.445",
+    "reference_answer": "(a) 0.44; (b) 9.0; (c) 27; (d) 140; (e) 1.5 × × 10 −3 ; (f) 0.44",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_53",
+    "questions": "Perform the following calculations and report each answer with the correct number of significant figures. (a) 628 × × 342 (b) (5.63 × × 10 2 ) × × (7.4 × × 10 3 ) (c) 28.0 13.483 28.0 13.483 (d) 8119 × × 0.000023 (e) 14.98 + 27,340 + 84.7593 (f) 42.7 + 0.259",
+    "reference_answer": "(a) 2.15 × × 10 5 ; (b) 4.2 × × 10 6 ; (c) 2.08; (d) 0.19; (e) 27,440; (f) 43.0",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_55",
+    "questions": "Consider the results of the archery contest shown in this figure. (a) Which archer is most precise? (b) Which archer is most accurate? (c) Who is both least precise and least accurate?",
+    "reference_answer": "(a) Archer X; (b) Archer W; (c) Archer Y",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_57",
+    "questions": "Write conversion factors (as ratios) for the number of: (a) yards in 1 meter (b) liters in 1 liquid quart (c) pounds in 1 kilogram",
+    "reference_answer": "(a) 1.0936 yd 1 m 1.0936 yd 1 m ; (b) 0.94635 L 1 qt 0.94635 L 1 qt ; (c) 2.2046 lb 1 kg 2.2046 lb 1 kg",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_59",
+    "questions": "The label on a soft drink bottle gives the volume in two units: 2.0 L and 67.6 fl oz. Use this information to derive a conversion factor between the English and metric units. How many significant figures can you justify in your conversion factor?",
+    "reference_answer": "2.0 L 67.6 fl oz = 0.030 L 1 fl oz 2.0 L 67.6 fl oz = 0.030 L 1 fl oz Only two significant figures are justified.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_61",
+    "questions": "Soccer is played with a round ball having a circumference between 27 and 28 in. and a weight between 14 and 16 oz. What are these specifications in units of centimeters and grams?",
+    "reference_answer": "68–71 cm; 400–450 g",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_63",
+    "questions": "How many milliliters of a soft drink are contained in a 12.0-oz can?",
+    "reference_answer": "355 mL",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_65",
+    "questions": "The diameter of a red blood cell is about 3 × × 10 −4 in. What is its diameter in centimeters?",
+    "reference_answer": "8 × × 10 −4 cm",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_67",
+    "questions": "Is a 197-lb weight lifter light enough to compete in a class limited to those weighing 90 kg or less?",
+    "reference_answer": "yes; weight = 89.4 kg",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_69",
+    "questions": "Many medical laboratory tests are run using 5.0 μL blood serum. What is this volume in milliliters?",
+    "reference_answer": "5.0 × × 10 −3 mL",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_71",
+    "questions": "Use scientific (exponential) notation to express the following quantities in terms of the SI base units in Table 1.2 : (a) 0.13 g (b) 232 Gg (c) 5.23 pm (d) 86.3 mg (e) 37.6 cm (f) 54 μm (g) 1 Ts (h) 27 ps (i) 0.15 mK",
+    "reference_answer": "(a) 1.3 × × 10 −4 kg; (b) 2.32 × × 10 8 kg; (c) 5.23 × × 10 −12 m; (d) 8.63 × × 10 −5 kg; (e) 3.76 × × 10 −1 m; (f) 5.4 × × 10 −5 m; (g) 1 × × 10 12 s; (h) 2.7 × × 10 −11 s; (i) 1.5 × × 10 −4 K",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_73",
+    "questions": "Gasoline is sold by the liter in many countries. How many liters are required to fill a 12.0-gal gas tank?",
+    "reference_answer": "45.4 L",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_75",
+    "questions": "A long ton is defined as exactly 2240 lb. What is this mass in kilograms?",
+    "reference_answer": "1.0160 × × 10 3 kg",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_77",
+    "questions": "Make the conversion indicated in each of the following: (a) the length of a soccer field, 120 m (three significant figures), to feet (b) the height of Mt. Kilimanjaro, at 19,565 ft, the highest mountain in Africa, to kilometers (c) the area of an 8.5- × 11-inch sheet of paper in cm 2 (d) the displacement volume of an automobile engine, 161 in. 3 , to liters (e) the estimated mass of the atmosphere, 5.6 × 10 15 tons, to kilograms (f) the mass of a bushel of rye, 32.0 lb, to kilograms (g) the mass of a 5.00-grain aspirin tablet to milligrams (1 grain = 0.00229 oz)",
+    "reference_answer": "(a) 394 ft; (b) 5.9634 km; (c) 6.0 × × 10 2 ; (d) 2.64 L; (e) 5.1 × × 10 18 kg; (f) 14.5 kg; (g) 324 mg",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_79",
+    "questions": "A chemist’s 50-Trillion Angstrom Run (see Exercise 1.78 ) would be an archeologist’s 10,900 cubit run. How long is one cubit in meters and in feet? (1 Å = 1 × × 10 −8 cm)",
+    "reference_answer": "0.46 m; 1.5 ft/cubit",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_81",
+    "questions": "As an instructor is preparing for an experiment, he requires 225 g phosphoric acid. The only container readily available is a 150-mL Erlenmeyer flask. Is it large enough to contain the acid, whose density is 1.83 g/mL?",
+    "reference_answer": "Yes, the acid’s volume is 123 mL.",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_83",
+    "questions": "A chemistry student is 159 cm tall and weighs 45.8 kg. What is her height in inches and weight in pounds?",
+    "reference_answer": "62.6 in (about 5 ft 3 in.) and 101 lb",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_85",
+    "questions": "Solve these problems about lumber dimensions. (a) To describe to a European how houses are constructed in the US, the dimensions of “two-by-four” lumber must be converted into metric units. The thickness × × width × × length dimensions are 1.50 in. × × 3.50 in. × × 8.00 ft in the US. What are the dimensions in cm × × cm × × m? (b) This lumber can be used as vertical studs, which are typically placed 16.0 in. apart. What is that distance in centimeters?",
+    "reference_answer": "(a) 3.81 cm × × 8.89 cm × × 2.44 m; (b) 40.6 cm",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_87",
+    "questions": "Calculate the density of aluminum if 27.6 cm 3 has a mass of 74.6 g.",
+    "reference_answer": "2.70 g/cm 3",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_89",
+    "questions": "Calculate these masses. (a) What is the mass of 6.00 cm 3 of mercury, density = 13.5939 g/cm 3 ? (b) What is the mass of 25.0 mL octane, density = 0.702 g/cm 3 ?",
+    "reference_answer": "(a) 81.6 g; (b) 17.6 g",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_91",
+    "questions": "Calculate these volumes. (a) What is the volume of 25 g iodine, density = 4.93 g/cm 3 ? (b) What is the volume of 3.28 g gaseous hydrogen, density = 0.089 g/L?",
+    "reference_answer": "(a) 5.1 mL; (b) 37 L",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_93",
+    "questions": "Convert the boiling temperature of gold, 2966 °C, into degrees Fahrenheit and kelvin.",
+    "reference_answer": "5371 °F, 3239 K",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_95",
+    "questions": "Convert the temperature of the coldest area in a freezer, −10 °F, to degrees Celsius and kelvin.",
+    "reference_answer": "−23 °C, 250 K",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_97",
+    "questions": "Convert the boiling temperature of liquid ammonia, −28.1 °F, into degrees Celsius and kelvin.",
+    "reference_answer": "−33.4 °C, 239.8 K",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "chemistry-2e_1_99",
+    "questions": "The weather in Europe was unusually warm during the summer of 1995. The TV news reported temperatures as high as 45 °C. What was the temperature on the Fahrenheit scale?",
+    "reference_answer": "113 °F",
+    "student_answer": "",
+    "label": "openstax_chemistry-2e"
+  },
+  {
+    "id": "astronomy-2e_2_1",
+    "questions": "From where on Earth could you observe all of the stars during the course of a year? What fraction of the sky can be seen from the North Pole?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "astronomy-2e_2_3",
+    "questions": "Explain, according to both geocentric and heliocentric cosmologies, why we see retrograde motion of the planets.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "astronomy-2e_2_5",
+    "questions": "What were four of Galileo’s discoveries that were important to astronomy?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "astronomy-2e_2_7",
+    "questions": "Ursa Minor contains the pole star, Polaris, and the asterism known as the Little Dipper. From most locations in the Northern Hemisphere, all of the stars in Ursa Minor are circumpolar. Does that mean these stars are also above the horizon during the day? Explain.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "astronomy-2e_2_9",
+    "questions": "How many degrees does the Moon move per day relative to the fixed stars? How many days does it take for the Moon to return to its original location relative to the fixed stars?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "astronomy-2e_2_11",
+    "questions": "The Sun was once thought to be a planet. Explain why.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "astronomy-2e_2_13",
+    "questions": "What is an asterism? Can you name an example?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "astronomy-2e_2_15",
+    "questions": "How did Aristotle deduce that the Sun is farther away from Earth than the Moon?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "astronomy-2e_2_17",
+    "questions": "How did Hipparchus discover the wobble of Earth’s axis, known as precession ?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "astronomy-2e_2_19",
+    "questions": "Why did Copernicus want to develop a completely new system for predicting planetary positions? Provide two reasons.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "astronomy-2e_2_21",
+    "questions": "What phases would Venus show if the geocentric model were correct?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_astronomy-2e"
+  },
+  {
+    "id": "biology-2e_1_5",
+    "questions": "A suggested and testable explanation for an event is called a ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_biology-2e"
+  },
+  {
+    "id": "biology-2e_1_7",
+    "questions": "The type of logical thinking that uses related observations to arrive at a general conclusion is called ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_biology-2e"
+  },
+  {
+    "id": "biology-2e_1_9",
+    "questions": "A person notices that her houseplants that are regularly exposed to music seem to grow more quickly than those in rooms with no music. As a result, she determines that plants grow better when exposed to music. This example most closely resembles which type of reasoning?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_biology-2e"
+  },
+  {
+    "id": "biology-2e_1_11",
+    "questions": "Viruses are not considered living because they ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_biology-2e"
+  },
+  {
+    "id": "biology-2e_1_13",
+    "questions": "A group of individuals of the same species living in the same area is called a(n) ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_biology-2e"
+  },
+  {
+    "id": "biology-2e_1_15",
+    "questions": "Where in a phylogenetic tree would you expect to find the organism that had evolved most recently?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_biology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_7",
+    "questions": "A scientist wants to study how the body uses foods and fluids during a marathon run. This scientist is most likely a(n) ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_9",
+    "questions": "A collection of similar tissues that performs a specific function is an ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_11",
+    "questions": "Metabolism can be defined as the ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_13",
+    "questions": "Cancer cells can be characterized as “generic” cells that perform no specialized body function. Thus cancer cells lack ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_15",
+    "questions": "Which of the following statements about nutrients is true?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_17",
+    "questions": "After you eat lunch, nerve cells in your stomach respond to the distension (the stimulus) resulting from the food. They relay this information to ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_19",
+    "questions": "Which of the following is an example of a normal physiologic process that uses a positive feedback loop?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_21",
+    "questions": "To make a banana split, you halve a banana into two long, thin, right and left sides along the ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_23",
+    "questions": "The heart is within the ________.",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_25",
+    "questions": "Which of the following imaging techniques would be best to use to study the uptake of nutrients by rapidly multiplying cancer cells?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  },
+  {
+    "id": "anatomy-and-physiology-2e_1_27",
+    "questions": "What are two major disadvantages of MRI scans?",
+    "reference_answer": "Not found",
+    "student_answer": "",
+    "label": "openstax_anatomy-and-physiology-2e"
+  }
+]

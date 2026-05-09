@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: misconception_postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: misconception_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+
+  memgraph:
+    image: memgraph/memgraph-platform:latest
+    container_name: misconception_memgraph
+    ports:
+      - "7687:7687" # Bolt port kết nối với Backend
+      - "3002:3000" # Memgraph Lab (Giao diện trực quan hoá đồ thị)
+    volumes:
+      - memgraph_data:/var/lib/memgraph
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  memgraph_data:

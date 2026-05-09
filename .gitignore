@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.hypothesis/
+htmlcov/
+.coverage
+coverage.xml
+
+# Node / Next.js (demos)
+node_modules/
+.next/
+out/
+.vercel
+
+# Build artifacts
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Models (too large for git)
+models/*.pt
+models/*.bin
+models/*.safetensors
+models/*.onnx
+models/*.pkl
+
+# Results (regeneratable)
+results/phase1/*.json
+results/phase2/*.json
+results/phase3/*.json
+results/phase4/*.json
+results/phase5/*.json
+!results/**/.gitkeep
+
+# Kiro
+.kiro/
+
+# OS
+Thumbs.db
+Desktop.ini

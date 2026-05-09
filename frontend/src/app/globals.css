@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0F172A;
+  --foreground: #E2E8F0;
+  --accent-purple: #8B5CF6;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Tích hợp CSS từ bản HTML tĩnh của người dùng --- */
+.hero { text-align:center; padding:60px 20px 40px; background:linear-gradient(135deg,#0F172A 0%,#1E293B 100%) }
+.hero h1 { font-size:2.5rem; font-weight:800; background:linear-gradient(90deg,#06B6D4,#8B5CF6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:12px }
+.hero p { color:#94A3B8; font-size:1.1rem; max-width:600px; margin:0 auto 30px }
+.stats { display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-bottom:20px }
+.stat { background:#1E293B; border:1px solid #334155; border-radius:12px; padding:16px 28px; text-align:center }
+.stat-num { font-size:2rem; font-weight:700; color:#06B6D4 }
+.stat-label { font-size:0.8rem; color:#64748B; text-transform:uppercase; letter-spacing:1px }
+.main-container { max-width:1200px; margin:0 auto; padding:30px 20px }
+.section-title { font-size:0.75rem; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:2px; margin-bottom:16px }
+.card { background:#1E293B; border:1px solid #334155; border-radius:16px; padding:24px; margin-bottom:24px }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:24px }
+@media(max-width:768px) { .grid2 { grid-template-columns:1fr } }
+canvas { border-radius:12px; cursor:crosshair }
+.legend { display:flex; flex-wrap:wrap; gap:12px; margin-top:16px }
+.legend-item { display:flex; align-items:center; gap:8px; cursor:pointer; padding:6px 12px; border-radius:8px; transition:background 0.2s }
+.legend-item:hover { background:#334155 }
+.dot { width:12px; height:12px; border-radius:50%; flex-shrink: 0; }
+.cluster-list { display:flex; flex-direction:column; gap:8px }
+.cluster-row { padding:14px; border-radius:12px; cursor:pointer; transition:all 0.2s; border:1px solid transparent }
+.cluster-row:hover { background:#334155; border-color:#475569 }
+.cluster-row.active { background:#1e3a5f; border-color:#06B6D4 }
+.cluster-name { font-weight:600; font-size:0.95rem; display:flex; align-items:center; gap:8px }
+.cluster-meta { font-size:0.78rem; color:#64748B; margin-top:4px }
+.keywords { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px }
+.kw { background:#0F3460; border:1px solid #1a4f8a; color:#60A5FA; padding:4px 10px; border-radius:20px; font-size:0.75rem; font-family:monospace }
+.answers { display:flex; flex-direction:column; gap:8px; margin-top:12px }
+.answer-card { background:#0F172A; border-left:3px solid #334155; padding:12px; border-radius:6px; font-size:0.85rem; color:#CBD5E1; line-height:1.5 }
+.answer-card .label { font-size:0.7rem; color:#64748B; margin-top:6px }
+.metric-row { display:flex; gap:12px; flex-wrap:wrap; margin-top:16px }
+.metric { background:#0F172A; border-radius:10px; padding:14px 20px; flex:1; min-width:100px; text-align:center }
+.metric-val { font-size:1.6rem; font-weight:700; color:#10B981 }
+.metric-name { font-size:0.7rem; color:#64748B; margin-top:4px }
+.pipeline { display:flex; align-items:center; gap:0; margin-bottom:30px; overflow-x:auto }
+.step { background:#1E293B; border:1px solid #334155; border-radius:12px; padding:16px; text-align:center; min-width:130px }
+.step-icon { font-size:1.8rem; margin-bottom:6px }
+.step-name { font-size:0.78rem; font-weight:600; color:#E2E8F0 }
+.step-desc { font-size:0.68rem; color:#64748B; margin-top:4px }
+.arrow { color:#334155; font-size:1.5rem; padding:0 8px }
+.tab-bar { display:flex; gap:4px; margin-bottom:20px }
+.tab { padding:8px 18px; border-radius:8px; border:none; background:transparent; color:#64748B; cursor:pointer; font-size:0.85rem; font-weight:500; transition:all 0.2s }
+.tab.active { background:#1E293B; color:#06B6D4; border:1px solid #334155 }
+.tab:hover { color:#94A3B8 }
+.tooltip-custom { position:fixed; background:#1E293B; border:1px solid #475569; border-radius:8px; padding:10px 14px; font-size:0.8rem; pointer-events:none; z-index:999; max-width:250px; line-height:1.4 }
+.bar-chart { display:flex; flex-direction:column; gap:10px; margin-top:10px }
+.bar-row { display:flex; align-items:center; gap:10px }
+.bar-label { font-size:0.78rem; color:#94A3B8; width:150px; text-align:right; flex-shrink:0 }
+.bar-track { flex:1; background:#0F172A; border-radius:4px; height:20px; overflow:hidden }
+.bar-fill { height:100%; border-radius:4px; display:flex; align-items:center; justify-content:flex-end; padding-right:8px; font-size:0.7rem; font-weight:600; color:#fff; transition:width 1s ease }
+
+/* Styles for API/Sync panel */
+.data-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+.data-item { display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+.data-item:last-child { border-bottom: none; padding-bottom: 0; }
+.badge { background: var(--accent-purple); color: white; padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+.button { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; width: 100%; margin-top: 1rem; }
+.button:hover { opacity: 0.9; transform: translateY(-1px); }
+.button:disabled { opacity: 0.5; cursor: not-allowed; }
