@@ -117,7 +117,7 @@ graph TD
         HF_API[🤖 Inference API - SBERT]
     end
 
-    subgraph Data & Storage (Local/Self-hosted)
+    subgraph Storage [Data & Storage Local]
         DB_PG[(🐘 PostgreSQL)]
     end
 
