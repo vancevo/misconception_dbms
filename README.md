@@ -27,7 +27,7 @@
 - **HuggingFace Model (SBERT)**: [vancevo/my-sbert-model](https://huggingface.co/vancevo/my-sbert-model)
 - **HuggingFace Model (BERTopic)**: [vancevo/my-bertopic-model](https://huggingface.co/vancevo/my-bertopic-model)
 - **Kaggle Notebook**: [DBMS_Misconception_Mining - Backend](https://www.kaggle.com/code/vancevo277/dbms-misconception-mining)
-- **Vercel Frontend**: [https://misconception-mining.vercel.app](https://misconception-mining.vercel.app)
+- **Vercel Frontend**: [https://misconception-mining.vercel.app][(https://misconception-mining.vercel.app)](https://misconception-dbms-c6ov.vercel.app/)
 - **Vercel Backend**: [https://misconception-mining-api.vercel.app](https://misconception-mining-api.vercel.app)
 
 ---
